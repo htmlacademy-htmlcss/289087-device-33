@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Aliya](https://up.htmlacademy.ru/htmlcss/33/user/289087).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/id6613).
 
 ---
 
