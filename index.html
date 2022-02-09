@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -38,40 +39,22 @@
             </button>
             <ul class="goods-dropdown-list">
               <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">
-                  <img src="images/categories/vr-headset.svg" width="72" height="87" alt="Виртуальная реальность">
-                  <span class="goods-dropdown-name">Виртуальная реальность</span>
-                </a>
+                <a class="goods-dropdown-link" href="#">Виртуальная реальность</a>
               </li>
               <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">
-                  <img src="images/categories/monopod.svg" width="72" height="87" alt="Монопод для cелфи">
-                  <span class="goods-dropdown-name">Моноподы для cелфи</span>
-                </a>
+                <a class="goods-dropdown-link" href="#">Моноподы для cелфи</a>
               </li>
               <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">
-                  <img src="images/categories/action-camera.svg" width="72" height="87" alt="Экшн-камеры">
-                  <span class="goods-dropdown-name">Экшн-камера</span>
-                </a>
+                <a class="goods-dropdown-link" href="#">Экшн-камера</a>
               </li>
               <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">
-                  <img src="images/categories/fitness-bracelet.svg" width="72" height="87" alt="Фитнес-браслет">
-                  <span class="goods-dropdown-name">Фитнес-браслеты</span>
-                </a>
+                <a class="goods-dropdown-link" href="#">Фитнес-браслеты</a>
               </li>
               <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">
-                  <img src="images/categories/smart-watch.svg" width="72" height="87" alt="Умные часы">
-                  <span class="goods-dropdown-name">Умные часы</span>
-                </a>
+                <a class="goods-dropdown-link" href="#">Умные часы</a>
               </li>
               <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">
-                  <img src="images/categories/quadcopter.svg" width="72" height="87" alt="Квадрокоптер">
-                  <span class="goods-dropdown-name">Квадрокоптеры</span>
-                </a>
+                <a class="goods-dropdown-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -114,12 +97,12 @@
                     Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                     замаскированным под стандартную камеру.
                   </p>
-                  <a class="button-promo-item" href="#">Подробнее</a>
+                  <a class="button button-promo-item" href="#">Подробнее</a>
                   <dl class="promo-item-features">
-                    <dt>Дальность полета</dt>
-                    <dd>800 м</dd>
-                    <dt>Радиус поражения</dt>
-                    <dd>50 м</dd>
+                    <dt class="promo-item-feature-title">Дальность полета</dt>
+                    <dd class="promo-item-feature-value">800 м</dd>
+                    <dt class="promo-item-feature-title">Радиус поражения</dt>
+                    <dd class="promo-item-feature-value">50 м</dd>
                   </dl>
                 </section>
               </li>
@@ -134,10 +117,10 @@
                   <p class="promo-item-description">
                     Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                   </p>
-                  <a class="button-promo-item" href="#">Подробнее</a>
+                  <a class="button button-promo-item" href="#">Подробнее</a>
                   <dl class="promo-item-features">
-                    <dt>Без подзарядки</dt>
-                    <dd>48 часов</dd>
+                    <dt class="promo-item-feature-title">Без подзарядки</dt>
+                    <dd class="promo-item-feature-value">48 часов</dd>
                   </dl>
                 </section>
               </li>
@@ -153,14 +136,14 @@
                     Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                   </p>
-                  <a  class="button-promo-item" href="#">Подробнее</a>
+                  <a  class="button button-promo-item" href="#">Подробнее</a>
                   <dl class="promo-item-features">
-                    <dt>Длина палки</dt>
-                    <dd>8,5 м</dd>
-                    <dt>Вес палки</dt>
-                    <dd>5 кг</dd>
-                    <dt>Материал</dt>
-                    <dd>Карбон</dd>
+                    <dt class="promo-item-feature-title">Длина палки</dt>
+                    <dd class="promo-item-feature-value">8,5 м</dd>
+                    <dt class="promo-item-feature-title">Вес палки</dt>
+                    <dd class="promo-item-feature-value">5 кг</dd>
+                    <dt class="promo-item-feature-title">Материал</dt>
+                    <dd class="promo-item-feature-value">Карбон</dd>
                   </dl>
                 </section>
               </li>
@@ -190,22 +173,40 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="goods-classes-list">
           <li class="goods-classes-item">
-            <a class="goods-classes-link" href="#">Виртуальная реальность</a>
+            <a class="goods-classes-link" href="#">
+              <img src="images/categories/category-vr-headset.svg" width="72" height="87" alt="Виртуальная реальность">
+              <span>Виртуальная реальность</span>
+            </a>
           </li>
           <li class="goods-classes-item">
-            <a class="goods-classes-link" href="#">Моноподы для cелфи</a>
+            <a class="goods-classes-link" href="#">
+              <img src="images/categories/category-monopod.svg" width="72" height="87" alt="Монопод для cелфи">
+              <span>Моноподы для cелфи</span>
+            </a>
           </li>
           <li class="goods-classes-item">
-            <a class="goods-classes-link" href="#">Экшн-камеры</a>
+            <a class="goods-classes-link" href="#">
+              <img src="images/categories/category-action-camera.svg" width="72" height="87" alt="Экшн-камеры">
+              <span>Экшн-камера</span>
+            </a>
           </li>
           <li class="goods-classes-item">
-            <a class="goods-classes-link" href="#">Фитнес-браслеты</a>
+            <a class="goods-classes-link" href="#">
+              <img src="images/categories/category-fitness-bracelet.svg" width="72" height="87" alt="Фитнес-браслет">
+              <span>Фитнес-браслеты</span>
+            </a>
           </li>
           <li class="goods-classes-item">
-            <a class="goods-classes-link" href="#">Умные часы</a>
+            <a class="goods-classes-link" href="#">
+              <img src="images/categories/category-smart-watch.svg" width="72" height="87" alt="Умные часы">
+              <span>Умные часы</span>
+            </a>
           </li>
           <li class="goods-classes-item">
-            <a class="goods-classes-link" href="#">Квадрокоптеры</a>
+            <a class="goods-classes-link" href="#">
+              <img src="images/categories/category-quadcopter.svg" width="72" height="87" alt="Квадрокоптер">
+              <span>Квадрокоптеры</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -264,7 +265,7 @@
           <li class="about-deliveries-item"><b>СДИК</b></li>
           <li class="about-deliveries-item"><b>ТоксБерри</b></li>
         </ul>
-        <a class="button-about" href="#">Подробнее о нас</a>
+        <a class="button button-about" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
@@ -282,7 +283,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button-feedback" href="#">Напишите нам</a>
+        <a class="button button-feedback" href="#">Напишите нам</a>
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -293,7 +294,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
           <input class="newsletter-email-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
-          <button class="button-newsletter" type="submit">Подписаться</button>
+          <button class="button button-newsletter" type="submit">Подписаться</button>
         </form>
         <p class="newsletter-benefit">Это бесплатно</p>
       </section>
