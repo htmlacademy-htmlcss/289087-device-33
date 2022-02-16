@@ -22,7 +22,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -43,10 +52,51 @@ body {
   text-transform: uppercase;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+
+  outline: 1px solid forestgreen;
+}
+
 /* Page header */
 .page-header {
   color: #000000;
   background-color: #FFE17F;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+
+  outline: 1px solid violet;
+}
+
+.user-nav,
+.site-nav {
+  margin: 0;
+  padding: 0;
+
+  outline: 1px solid violet;
+}
+
+.user-nav {
+  width: 230px;
+  margin-left: 26px;
+}
+
+.site-search-form {
+  width: 517px;
+
+  outline: 1px solid violet;
 }
 
 .button-search {
@@ -59,6 +109,10 @@ body {
 .user-link {
   color: #000000;
   text-decoration: none;
+}
+
+.site-nav {
+  width: 471px;
 }
 
 .site-nav-link {
@@ -79,7 +133,32 @@ body {
   text-decoration: none;
 }
 
+/* Main */
+.main-container {
+  flex-grow: 1;
+}
+
 /* Promo slider */
+.promo-slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-item-image {
+  outline: 1px solid red;
+}
+
+.promo-slider-column {
+  width: 560px;
+  outline: 1px solid red;
+}
+
 .promo-item-slogan {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -88,7 +167,20 @@ body {
   color: #000000;
  }
 
+.promo-item-features {
+  display: flex;
+}
+
+.promo-item-feature-box {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 20px;
+
+  outline: 1px solid blue;
+}
+
 .promo-item-feature-value {
+  margin-left: 0;
   font-size: 36px;
   line-height: 30px;
   color: #000000;
@@ -100,6 +192,22 @@ body {
  }
 
  /* Categories list */
+.goods-classes-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.goods-classes-item {
+  width: 160px;
+  padding: 0;
+  background-color: #FFE17F;
+
+  outline: 1px solid red;
+}
+
 .goods-classes-link {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -111,8 +219,22 @@ body {
 }
 
  /* Services tabs */
-.services {
+.services-wrapper {
   background-color: #F0F0F0;
+}
+
+.services {
+  display: flex;
+}
+
+.services-tabs {
+  width: 287px;
+}
+
+.services-tabs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .services-tabs-item {
@@ -123,11 +245,33 @@ body {
   letter-spacing: 0.2em;
   color: #000000;
   text-transform: uppercase;
+
+  outline: 1px solid red;
 }
 
 .services-tabs-item-current {
   color: #FFE17F;
   background-color: #000000;
+}
+
+.services-articles {
+  width: 873px;
+  padding-right: 63px;
+  padding-left: 116px;
+  box-sizing: border-box;
+
+  outline: 1px solid red;
+}
+
+.services-articles-list {
+  margin: 0;
+  padding: 0;
+}
+
+.services-article {
+  width: 475px;
+  padding-right: 254px;
+  outline: 1px solid violet;
 }
 
 .services-article-title {
@@ -139,6 +283,10 @@ body {
 }
 
  /* Delivery order */
+.delivery-order {
+  background-color: #F0F0F0;
+}
+
 .button-delivery-order {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -153,6 +301,24 @@ body {
 }
 
  /* About us, Contacts */
+.main-columns {
+  display: flex;
+  justify-content: space-between
+}
+
+.about {
+  width: 520px;
+  margin-right: 108px;
+
+  outline: 1px solid red;
+}
+
+.contacts {
+  width: 532px;
+
+  outline: 1px solid red;
+}
+
 .about-title,
 .contacts-title {
   font-family: Raleway, sans-serif;
@@ -185,16 +351,43 @@ body {
 }
 
  /* Newsletter subscription */
-.newsletter {
+.newsletter-wrapper {
   background-color: #F0F0F0;
 }
 
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .newsletter-title {
+  width: 348px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+
+  outline: 1px solid blue;
+}
+
+.newsletter-description {
+  width: 560px;
+
+  outline: 1px solid blue;
+}
+
+.newsletter-form {
+  width: 810px;
+
+  outline: 1px solid blue;
+}
+
+.newsletter-benefit {
+  width: 160px;
+
+  outline: 1px solid blue;
 }
 
 .button-newsletter {
@@ -207,15 +400,48 @@ body {
   background-color: #444444;
 }
 
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-footer-logo {
+  display: block;
+  width: 100%;
+
+  outline: 1px solid blue;
+}
+
 .page-footer-address {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+
+  outline: 1px solid blue;
+}
+
+.page-footer-address-text {
+  width: 239px;
 }
 
 .page-footer-address-phone {
+  width: 174px;
   color: #FFFFFF;
 }
+
+.page-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 444px;
+  list-style: none;
+  margin-left: 112px;
+  margin-right: 190px;
+  padding: 0;
+
+  outline: 1px solid blue;
+}
+
 
 .page-footer-nav-link {
   font-family: Raleway, sans-serif;
@@ -228,15 +454,29 @@ body {
   text-transform: uppercase;
 }
 
+.social-media {
+  width: 150px;
+  margin-left: auto;
+  margin-right: 330px;
+  padding: 0;
+  list-style: none;
+
+  outline: 1px solid blue;
+}
+
 
 /* Inner page */
 .main-inner {
   color: #000000;
-  background-color: #F0F0F0;
 }
 
 .inner-header {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 21px;
   background-color: #FFFFFF;
+
+  outline: 1px solid red;
 }
 
 .inner-title {
@@ -251,6 +491,30 @@ body {
   line-height: 19px;
   color: inherit;
   text-decoration: none;
+}
+
+/* Catalog */
+.catalog-wrap {
+  background-color: #F0F0F0;
+}
+
+.catalog-container {
+  display: flex;
+}
+
+.filters {
+  width: 320px;
+  padding-left: 60px;
+  padding-right: 40px;
+  box-sizing: border-box;
+
+  outline: 1px solid violet;
+}
+
+.sort-products-container {
+  width: 840px;
+
+  outline: 1px solid violet;
 }
 
 /* Filters, Sort*/
@@ -276,6 +540,11 @@ body {
   line-height: 19px;
 }
 
+.sort {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 .sort-control {
   font-size: 18px;
   line-height: 30px;
@@ -284,6 +553,8 @@ body {
 
 /* Products */
 .products {
+  padding-right: 40px;
+  padding-left: 40px;
   background-color: #FFFFFF;
 }
 
