@@ -20,26 +20,26 @@
         </form>
 
         <ul class="user-nav">
-          <li>
+          <li class="user-nav-item">
             <a class="user-link user-link-login" href="#">Войти</a>
           </li>
-        </ul>
-        <ul class="user-nav">
-          <li>
+          <li class="user-nav-item">
             <a class="user-link user-link-comparison" href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="user-nav-item">
             <a class="user-link user-link-cart" href="#">Корзина</a>
           </li>
         </ul>
 
         <ul class="site-nav">
           <li class="site-nav-item goods-dropdown">
-            <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
-            <button class="goods-dropdown-button" type="button">
-              <span class="visually-hidden">Открыть каталог товаров</span>
-            </button>
-            <ul class="goods-dropdown-list">
+            <div class="site-nav-catalog">
+              <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
+              <button class="goods-dropdown-button" type="button">
+                <span class="visually-hidden">Открыть каталог товаров</span>
+              </button>
+            </div>
+            <ul class="goods-dropdown-list visually-hidden">
               <li class="goods-dropdown-item">
                 <a class="goods-dropdown-link" href="#">Виртуальная реальность</a>
               </li>
@@ -92,7 +92,7 @@
             <ol class="promo-slider-list">
               <li class="promo-slider-item">
                 <section class="promo-item">
-                  <h3 class="visually-hidden" hidden>Квадрокоптер</h3>
+                  <h3 class="visually-hidden">Квадрокоптер</h3>
                   <img class="promo-item-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
 
                   <div class="promo-slider-column">
@@ -118,9 +118,9 @@
                 </section>
               </li>
 
-              <li class="promo-slider-item">
+              <li class="promo-slider-item visually-hidden">
                 <section class="promo-item">
-                  <h3 class="visually-hidden" hidden>Фитнес-браслет</h3>
+                  <h3 class="visually-hidden">Фитнес-браслет</h3>
                   <img class="promo-item-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
                   <div class="promo-slider-column">
 
@@ -142,9 +142,9 @@
                 </section>
               </li>
 
-              <li class="promo-slider-item">
+              <li class="promo-slider-item visually-hidden">
                 <section class="promo-item">
-                  <h3 class="visually-hidden" hidden>Монопод для селфи</h3>
+                  <h3 class="visually-hidden">Монопод для селфи</h3>
                   <img class="promo-item-image" src="images/slider/slider-3.png" width="560" height="560" alt="Монопод для селфи">
                   <div class="promo-slider-column">
                     <p class="promo-item-slogan">
@@ -200,38 +200,50 @@
         <ul class="goods-classes-list">
           <li class="goods-classes-item">
             <a class="goods-classes-link" href="#">
-              <img src="images/categories/category-vr-headset.svg" width="72" height="87" alt="Виртуальная реальность">
-              <p>Виртуальная реальность</p>
+              <div class="goods-classes-img-wrap">
+                <img src="images/categories/category-vr-headset.svg" width="97" height="55" alt="Виртуальная реальность">
+              </div>
+              <p class="goods-classes-text">Виртуальная реальность</p>
             </a>
           </li>
           <li class="goods-classes-item">
             <a class="goods-classes-link" href="#">
-              <img src="images/categories/category-monopod.svg" width="72" height="87" alt="Монопод для cелфи">
-              <p>Моноподы для cелфи</p>
+              <div class="goods-classes-img-wrap goods-classes-monopod">
+                <img src="images/categories/category-monopod.svg" width="87" height="117" alt="Монопод для cелфи">
+              </div>
+              <p class="goods-classes-text">Моноподы<br>для cелфи</p>
             </a>
           </li>
           <li class="goods-classes-item">
             <a class="goods-classes-link" href="#">
-              <img src="images/categories/category-action-camera.svg" width="72" height="87" alt="Экшн-камеры">
-              <p>Экшн-камера</p>
+              <div class="goods-classes-img-wrap">
+                <img src="images/categories/category-action-camera.svg" width="72" height="87" alt="Экшн-камеры">
+              </div>
+              <p class="goods-classes-text">Экшн-камера</p>
             </a>
           </li>
           <li class="goods-classes-item">
             <a class="goods-classes-link" href="#">
-              <img src="images/categories/category-fitness-bracelet.svg" width="72" height="87" alt="Фитнес-браслет">
-              <p>Фитнес-браслеты</p>
+              <div class="goods-classes-img-wrap">
+                <img src="images/categories/category-fitness-bracelet.svg" width="108" height="66" alt="Фитнес-браслет">
+              </div>
+              <p class="goods-classes-text">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="goods-classes-item">
             <a class="goods-classes-link" href="#">
-              <img src="images/categories/category-smart-watch.svg" width="72" height="87" alt="Умные часы">
-              <p>Умные часы</p>
+              <div class="goods-classes-img-wrap">
+                <img src="images/categories/category-smart-watch.svg" width="57" height="98" alt="Умные часы">
+              </div>
+              <p class="goods-classes-text">Умные часы</p>
             </a>
           </li>
           <li class="goods-classes-item">
             <a class="goods-classes-link" href="#">
-              <img src="images/categories/category-quadcopter.svg" width="72" height="87" alt="Квадрокоптер">
-              <p>Квадрокоптеры</p>
+              <div class="goods-classes-img-wrap">
+                <img src="images/categories/category-quadcopter.svg" width="133" height="70" alt="Квадрокоптер">
+              </div>
+              <p class="goods-classes-text">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
@@ -239,7 +251,7 @@
 
       <div class="services-wrapper">
         <section class="services container">
-          <h2 class="visually-hidden" hidden>Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
           <div class="services-tabs">
             <ul class="services-tabs-list">
               <li class="services-tabs-item services-tabs-item-current">Доставка</li>
@@ -257,7 +269,7 @@
                   мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
               </li>
-              <li class="services-article">
+              <li class="services-article visually-hidden">
                 <h3 class="services-article-title">Гарантия</h3>
                 <p class="services-article-description">
                   Если из-за возгорания купленного у нас товара у вас
@@ -265,7 +277,7 @@
                   Товар, не дом, конечно же.
                 </p>
               </li>
-              <li class="services-article">
+              <li class="services-article visually-hidden">
                 <h3 class="services-article-title">Кредит</h3>
                 <p class="services-article-description">
                   Залезть в долговую яму стало проще!
@@ -323,7 +335,7 @@
         <section class="newsletter container">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">
-            Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+            Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
             распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">

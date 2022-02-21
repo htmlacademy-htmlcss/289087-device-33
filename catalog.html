@@ -8,7 +8,7 @@
   <body>
     <header class="page-header container">
       <nav class="main-nav">
-        <a class="logo" href="index.html">
+        <a class="logo logo-inner" href="index.html">
           <img src="images/logo.svg" width="145" height="37" alt="Логотип интернет-магазина Девайс">
           <span class="visually-hidden">На главную</span>
         </a>
@@ -20,29 +20,29 @@
         </form>
 
         <ul class="user-nav">
-          <li>
+          <li class="user-nav-item">
             <a class="user-link user-link-profile" href="#">Коля Петухов</a>
           </li>
-          <li>
-            <a class="user-link user-link-login" href="#">Выйти</a>
+          <li class="user-nav-item">
+            <a class="user-link user-link-logout" href="#">Выйти</a>
           </li>
-        </ul>
-        <ul class="user-nav">
-          <li>
+          <li class="user-nav-item">
             <a class="user-link user-link-comparison" href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="user-nav-item">
             <a class="user-link user-link-cart" href="#">Корзина</a>
           </li>
         </ul>
 
         <ul class="site-nav">
           <li class="site-nav-item goods-dropdown">
-            <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
-            <button class="goods-dropdown-button" type="button">
-              <span class="visually-hidden">Открыть каталог товаров</span>
-            </button>
-            <ul class="goods-dropdown-list">
+            <div class="site-nav-catalog">
+              <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
+              <button class="goods-dropdown-button" type="button">
+                <span class="visually-hidden">Открыть каталог товаров</span>
+              </button>
+            </div>
+            <ul class="goods-dropdown-list visually-hidden">
               <li class="goods-dropdown-item">
                 <a class="goods-dropdown-link" href="#">Виртуальная реальность</a>
               </li>
@@ -162,7 +162,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button" type="submit">Показать</button>
+              <button class="button button-filters" type="submit">Показать</button>
             </form>
           </section>
           <div class="sort-products-container">
@@ -223,8 +223,8 @@
               </ul>
               <a class="button-show-more" href="#">Загрузить ещё</a>
               <ul class="pagination">
-                <li class="pagination-item">
-                  <a class="pagination-prev" href="#">Назад</a>
+                <li class="pagination-item-prev">
+                  <a class="pagination-link-prev" href="#">Назад</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">1</a>
@@ -241,8 +241,8 @@
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">15</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-next" href="#">Вперёд</a>
+                <li class="pagination-item-next">
+                  <a class="pagination-link-next" href="#">Вперёд</a>
                 </li>
               </ul>
             </section>
