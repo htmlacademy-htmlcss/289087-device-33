@@ -66,7 +66,7 @@
         </ul>
         <ul class="site-nav">
           <li class="site-nav-item">
-            <a class="site-nav-link site-nav-link-current" href="#">Доставка</a>
+            <a class="site-nav-link" href="#">Доставка</a>
           </li>
           <li class="site-nav-item">
             <a class="site-nav-link" href="#">Гарантия</a>
@@ -257,20 +257,32 @@
           <h2 class="visually-hidden">Услуги</h2>
           <div class="services-tabs">
             <ul class="services-tabs-list">
-              <li class="services-tabs-item services-tabs-item-current">Доставка</li>
-              <li class="services-tabs-item">Гарантия</li>
-              <li class="services-tabs-item">Кредит</li>
+              <li class="services-tabs-item">
+                <a class="services-tab-link tab-current" href="#">
+                  Доставка
+                </a>
+              </li>
+              <li class="services-tabs-item">
+                <a class="services-tab-link" href="#">
+                  Гарантия
+                </a>
+              </li>
+              <li class="services-tabs-item">
+                <a class="services-tab-link" href="#">
+                  Кредит
+                </a>
+              </li>
             </ul>
           </div>
           <div class="services-articles">
             <ul class="services-articles-list">
-              <li class="services-article services-article-delivery">
+              <li class="services-article services-article-delivery services-article-current">
                 <h3 class="services-article-title">Доставка</h3>
                 <p class="services-article-description">
                   Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду
                   совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.                </p>
               </li>
-              <li class="services-article services-article-warranty visually-hidden">
+              <li class="services-article services-article-warranty">
                 <h3 class="services-article-title">Гарантия</h3>
                 <p class="services-article-description">
                   Если из-за возгорания купленного у нас товара у вас
@@ -278,7 +290,7 @@
                   Товар, не дом, конечно же.
                 </p>
               </li>
-              <li class="services-article services-article-credit visually-hidden">
+              <li class="services-article services-article-credit">
                 <h3 class="services-article-title">Кредит</h3>
                 <p class="services-article-description">
                   Залезть в долговую яму стало проще!
@@ -293,11 +305,9 @@
 
       <section class="delivery-order container">
         <h2 class="visually-hidden">Доставка под заказ</h2>
-        <a class="button-delivery-order" href="#">Доставим редкий товар под заказ
-
-          <div class="delivery-info">
-            <img src="./images/icon-info.svg" width="2" height="13" alt="Дополнительная информация">
-          </div>
+        <a class="button-delivery-order" href="#">
+          Доставим редкий товар под заказ
+          <div class="delivery-info"></div>
         </a>
       </section>
 
