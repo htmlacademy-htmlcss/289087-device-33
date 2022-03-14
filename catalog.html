@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -20,10 +21,8 @@
         </form>
 
         <ul class="user-nav">
-          <li class="user-nav-item user-nav-item-profile">
+          <li class="user-nav-item user-nav-item-login">
             <a class="user-link user-link-profile" href="#">Коля Петухов</a>
-          </li>
-          <li class="user-nav-item user-nav-item-logout">
             <a class="user-link user-link-logout" href="#">Выйти</a>
           </li>
           <li class="user-nav-item user-nav-item-comparison">
@@ -38,31 +37,31 @@
         </ul>
 
         <ul class="site-nav-catalog">
-          <li class="site-nav-catalog-item goods-dropdown">
+          <li class="site-nav-catalog-item">
             <div class="site-nav-catalog-inner">
-              <a class="site-nav-catalog-link" href="catalog.html">Каталог товаров</a>
-              <button class="goods-dropdown-button" type="button">
+              <a class="site-nav-catalog-link" href="#">Каталог товаров</a>
+              <button class="button-subcatalog" type="button">
                 <span class="visually-hidden">Открыть каталог товаров</span>
               </button>
             </div>
-            <ul class="goods-dropdown-list visually-hidden">
-              <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">Виртуальная реальность</a>
+            <ul class="subcatalog">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Виртуальная реальность</a>
               </li>
-              <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">Моноподы для cелфи</a>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="catalog.html">Моноподы для cелфи</a>
               </li>
-              <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">Экшн-камеры</a>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Экшн-камеры</a>
               </li>
-              <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">Фитнес-браслеты</a>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
               </li>
-              <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">Умные часы</a>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Умные часы</a>
               </li>
-              <li class="goods-dropdown-item">
-                <a class="goods-dropdown-link" href="#">Квадрокоптеры</a>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -133,35 +132,35 @@
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="checkbox" name="black" checked>
                       <span class="filter-control-mark"></span>
-                      Черный
+                      <span class="filter-control-text">Черный</span>
                     </label>
                   </li>
                   <li class="filter-list-item">
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="checkbox" name="white" checked>
                       <span class="filter-control-mark"></span>
-                      Белый
+                      <span class="filter-control-text">Белый</span>
                     </label>
                   </li>
                   <li class="filter-list-item">
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="checkbox" name="blue">
                       <span class="filter-control-mark"></span>
-                      Синий
+                      <span class="filter-control-text">Синий</span>
                     </label>
                   </li>
                   <li class="filter-list-item">
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="checkbox" name="red">
                       <span class="filter-control-mark"></span>
-                      Красный
+                      <span class="filter-control-text">Красный</span>
                     </label>
                   </li>
                   <li class="filter-list-item">
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="checkbox" name="pink">
                       <span class="filter-control-mark"></span>
-                      Розовый
+                      <span class="filter-control-text">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -173,15 +172,14 @@
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="radio" name="bluetooth" value="yes" checked>
                       <span class="filter-control-mark"></span>
-                      Есть
-
+                      <span class="filter-control-text">Есть</span>
                     </label>
                   </li>
                   <li class="filter-list-item">
                     <label class="filter-control">
                       <input class="filter-control-input visually-hidden" type="radio" name="bluetooth" value="no">
                       <span class="filter-control-mark"></span>
-                      Нет
+                      <span class="filter-control-text">Нет</span>
                     </label>
                   </li>
                 </ul>
@@ -219,7 +217,7 @@
                   </section>
                 </li>
                 <li class="product-item">
-                  <section class="product-card">
+                  <section class="product-card product-card-new">
                     <a class="product-link" href="#">
                       <img class="product-img" src="images/catalog/product-2.jpeg" width="360" height="380" alt="Фотография профессиональной селфи-палки">
                     </a>
@@ -230,7 +228,6 @@
                 </li>
                 <li class="product-item">
                   <section class="product-card">
-                    <p class="product-card-chevron">New</p>
                     <a class="product-link" href="#" >
                       <img class="product-img" src="images/catalog/product-3.jpeg" width="360" height="380" alt="Фотография непотопляемой селфи-палки">
                     </a>
