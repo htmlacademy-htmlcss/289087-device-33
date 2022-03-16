@@ -103,7 +103,6 @@ body {
 }
 
 .button:focus {
-  background-color: transparent;
   outline: 2px solid #af4fff;
 }
 
@@ -620,16 +619,17 @@ body {
   text-decoration-thickness: 2px;
 }
 
+.site-nav-catalog-link:hover,
 .site-nav-link:hover {
   opacity: 0.6;
 }
 
+.site-nav-catalog-link:active,
 .site-nav-link:active {
   opacity: 0.3;
 }
 
 .site-nav-link:focus {
-  opacity: 1;
   outline: 2px solid #af4fff;
 }
 
@@ -1132,7 +1132,6 @@ body {
 }
 
 .services-tab-link:not(.tab-current):focus {
-  background-color: transparent;
   outline: 2px solid #af4fff;
 }
 
