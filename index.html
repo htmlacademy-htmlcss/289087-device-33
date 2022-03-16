@@ -10,7 +10,7 @@
   <body>
     <header class="page-header container">
       <nav class="main-nav">
-        <a class="logo" href="index.html">
+        <a class="logo">
           <img src="images/logo.svg" width="145" height="37" alt="Логотип интернет-магазина Девайс.">
           <span class="visually-hidden">На главную.</span>
         </a>
@@ -338,7 +338,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container container">
-        <a class="page-footer-logo" href="index.html">
+        <a class="page-footer-logo">
           <img src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс.">
           <span class="visually-hidden">На главную.</span>
         </a>
@@ -424,23 +424,23 @@
               <input class="modal-form-input" type="text" name="order-description" id="order-description" placeholder="В свободной форме">
             </p>
             <p class="modal-form-group modal-form-items-number">
-              <span class="modal-form-label modal-form-label-icon">
-                <label class="modal-form-label" for="items-number">Количество:
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                      <span class="visually-hidden">Показать комментарий.</span>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-                  </span>
-                </label>
+              <label class="modal-form-label modal-form-label-icon" for="items-number">Количество:
+                <span class="tooltip">
+                  <a class="tooltip-toggle" aria-labelledby="tooltip-label">
+                    <span class="visually-hidden">Показать комментарий.</span>
+                  </a>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                </span>
+              </label>
+              <span class="modal-input-wrapper"> <!-- При ошибке добавить класс invalid -->
+                <button class="button-items-control items-control-decrease" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                </button>
+                <input class="modal-form-input input-items-number" type="number" value="1" min="1" name="items-number" id="items-number" readonly>
+                <button class="button-items-control items-control-increase" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                </button>
               </span>
-              <button class="button-items-control items-control-decrease" type="button">
-                <span class="visually-hidden">Уменьшить количество.</span>
-              </button>
-              <input class="modal-form-input input-items-number invalid" type="text" value="1" name="items-number" id="items-number" readonly>
-              <button class="button-items-control items-control-increase" type="button">
-                <span class="visually-hidden">Увеличить количество.</span>
-              </button>
             </p>
             <button class="button-modal-form button" type="submit">Отправить</button>
           </form>
